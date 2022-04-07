@@ -11,7 +11,22 @@ config_version=4
 [application]
 
 config/name="IntoTheAbyss"
+run/main_scene="res://World.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/height=700
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[input]
+
+ui_action={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":32,"unicode":0,"echo":false,"script":null)
+ ]
+}
 
 [physics]
 
@@ -19,4 +34,7 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+2d/snapping/use_gpu_pixel_snap=true
+quality/subsurface_scattering/quality=2
+environment/default_clear_color=Color( 0.258824, 0.247059, 0.247059, 1 )
 environment/default_environment="res://default_env.tres"
