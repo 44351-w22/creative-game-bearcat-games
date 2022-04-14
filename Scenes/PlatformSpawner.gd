@@ -7,13 +7,16 @@ onready var platform = Platform.instance()
 
 func _ready():
 	randomize()
-	self.add_child(platform)
-	platform.position.x = randi()%497 + 263
+	$Platforms.position.x = randi()%497 + 263
+	$Platforms.position.y = 750
 
 
+func _on_Platforms_remove():
+	$Platforms.queue_free()
+	_on_Platforms_spawn()
 
 func _on_Platforms_spawn():
-	print("doofus")
-	remove_child(platform)
-	platform.queue_free()
-	_ready()
+	print("spawned")
+	self.add_child($Platforms)
+	$Platforms.position.x = randi()%497 + 263
+	$Platforms.position.y = 750

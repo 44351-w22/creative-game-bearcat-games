@@ -7,7 +7,8 @@ var score = 0
 
 
 func player_score():
-	print("poop")
+	pass
+	print("scored")
 	score += 1
 	hud.update_score(score)
 

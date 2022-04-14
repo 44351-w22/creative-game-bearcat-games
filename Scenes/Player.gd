@@ -29,6 +29,6 @@ func _physics_process(delta):
 func start():
 	if started: return
 	started = true
-	gravity_scale = 1
+	gravity_scale = 0
 	linear_velocity.y = 500
 	animator.play("Idle")
