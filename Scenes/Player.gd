@@ -6,7 +6,7 @@ onready var animator = $AnimationPlayer
 var started = false
 
 
-export var SPEED = 700
+export var SPEED = 725
 
 
 func _physics_process(delta):
@@ -22,13 +22,13 @@ func _physics_process(delta):
 		linear_velocity.x = SPEED
 	elif linear_velocity.y > 0:
 		animator.play("Idle")
-	if global_position.y >= 2500:
+	if global_position.y >= 1000:
 		global_position.y = 0
 		
 
 func start():
 	if started: return
 	started = true
-	gravity_scale = 0
+	gravity_scale = 1
 	linear_velocity.y = 500
 	animator.play("Idle")
