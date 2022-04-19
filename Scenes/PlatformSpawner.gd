@@ -1,6 +1,7 @@
 extends Node2D
 
 signal scored
+signal game_over
 
 
 func _ready():
@@ -14,3 +15,6 @@ func _on_Platforms_spawn():
 
 func _on_Platforms_score():
 	emit_signal("scored")
+
+func _on_Platforms_die():
+	emit_signal("game_over")
