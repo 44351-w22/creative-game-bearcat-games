@@ -30,7 +30,7 @@ func _physics_process(delta):
 		linear_velocity.x = SPEED
 	elif linear_velocity.y > 0:
 		animator.play("Idle")
-	if global_position.y >= 1000:
+	if global_position.y >= 1250:
 		global_position.y = 0
 		
 
