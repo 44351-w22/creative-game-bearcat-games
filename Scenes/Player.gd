@@ -6,7 +6,7 @@ signal start
 signal died
 signal new_game
 var started = false
-export var SPEED = 725
+export var SPEED = 760
 
 func new_game():
 	animator.play("Parachute Full")
@@ -30,8 +30,8 @@ func _physics_process(delta):
 		linear_velocity.x = SPEED
 	elif linear_velocity.y > 0:
 		animator.play("Idle")
-	if global_position.y >= 1250:
-		global_position.y = 0
+	if global_position.y >= 1600:
+		global_position.y = 150
 		
 
 func start():
