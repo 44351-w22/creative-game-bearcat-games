@@ -21,3 +21,11 @@ func _on_Area2D_body_entered(body):
 
 func _on_Respawn_body_exited(body):
 	global_position.x = randi()%900 + 65
+	
+	var num = randi()%3+1
+	
+	if num == 1:
+		global_position.y = 1100
+	if num == 2 || 3:
+		global_position.y = 1050
+	

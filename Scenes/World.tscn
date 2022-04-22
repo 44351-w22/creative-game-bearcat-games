@@ -108,7 +108,7 @@ position = Vector2( 28, 0 )
 position = Vector2( 17, 701 )
 
 [node name="Enemy" parent="." instance=ExtResource( 5 )]
-position = Vector2( 545, 1052 )
+position = Vector2( 512, 1050 )
 
 [node name="TileMap" parent="." instance=ExtResource( 1 )]
 scale = Vector2( 1.5, 1.5 )
