@@ -2,11 +2,12 @@ extends RigidBody2D
 class_name Player
 
 onready var animator = $AnimationPlayer
+onready var pressed = false
 signal start
 signal died
 signal new_game
 var started = false
-export var SPEED = 760
+export var SPEED = 850
 
 func new_game():
 	animator.play("Parachute Full")
@@ -40,4 +41,6 @@ func start():
 	linear_velocity.y = 500
 	animator.play("Idle")
 	emit_signal("start")
+
+
 

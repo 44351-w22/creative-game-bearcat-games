@@ -1,6 +1,7 @@
 extends CanvasLayer
 
 onready var score_label = $Score
+signal mute
 
 func update_score(score):
 	score_label.text = str(score)
@@ -17,3 +18,4 @@ func _on_Player_new_game():
 	$Start.show()
 	$HighScore.show()
 	$HighScoreNum.show()
+
