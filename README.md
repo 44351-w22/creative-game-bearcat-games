@@ -4,7 +4,7 @@ Deploy Game: https://44351-w22.github.io/creative-game-bearcat-games/
 
 A Production by Bearcat Games
 
-Writers and Developers:
+Developers and Animators:
 - Chad Potter
 - Madi Combe
 
